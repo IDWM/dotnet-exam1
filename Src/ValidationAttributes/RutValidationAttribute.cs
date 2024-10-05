@@ -23,7 +23,37 @@ namespace dotnet_exam1.Src.ValidationAttributes
             if (!regex.IsMatch(rut))
                 return new ValidationResult("El formato del RUT no es válido.");
 
+            var rutWithoutFormat = rut.Replace(".", "").Replace("-", "");
+            var rutDigits = rutWithoutFormat.Substring(0, rutWithoutFormat.Length - 1);
+            var dv = rutWithoutFormat[^1].ToString().ToUpper();
+
+            if (!IsValidRutDv(rutDigits, dv))
+                return new ValidationResult("El dígito verificador del RUT no es válido.");
+
             return ValidationResult.Success;
+        }
+
+        private static bool IsValidRutDv(string rutDigits, string dv)
+        {
+            int sum = 0;
+            int multiplier = 2;
+
+            for (int i = rutDigits.Length - 1; i >= 0; i--)
+            {
+                sum += int.Parse(rutDigits[i].ToString()) * multiplier;
+                multiplier = multiplier == 7 ? 2 : multiplier + 1;
+            }
+
+            int remainder = 11 - (sum % 11);
+
+            string calculatedDv = remainder switch
+            {
+                11 => "0",
+                10 => "K",
+                _ => remainder.ToString()
+            };
+
+            return dv == calculatedDv;
         }
     }
 }
