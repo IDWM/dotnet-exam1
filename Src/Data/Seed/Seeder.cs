@@ -57,6 +57,7 @@ namespace dotnet_exam1.Src.Data.Seed
                 var user = new User
                 {
                     Rut = userDto.Rut,
+                    Name = userDto.Name,
                     Email = userDto.Email,
                     Birthdate = userDto.Birthdate,
                     Gender = gender
