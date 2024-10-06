@@ -11,7 +11,7 @@ using dotnet_exam1.Src.Data;
 namespace dotnet_exam1.Src.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241006191250_InitialCreate")]
+    [Migration("20241006202548_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -50,6 +50,11 @@ namespace dotnet_exam1.Src.Data.Migrations
 
                     b.Property<int>("GenderId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Rut")
                         .IsRequired()

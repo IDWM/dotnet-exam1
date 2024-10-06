@@ -48,6 +48,11 @@ namespace dotnet_exam1.Src.Data.Migrations
                     b.Property<int>("GenderId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Rut")
                         .IsRequired()
                         .HasColumnType("TEXT");

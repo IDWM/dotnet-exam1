@@ -31,6 +31,7 @@ namespace dotnet_exam1.Src.Data.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Rut = table.Column<string>(type: "TEXT", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: false),
                     Birthdate = table.Column<DateOnly>(type: "TEXT", nullable: false),
                     GenderId = table.Column<int>(type: "INTEGER", nullable: false)
