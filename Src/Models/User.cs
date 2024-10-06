@@ -10,6 +10,9 @@ namespace dotnet_exam1.Src.Models
         [Rut]
         public required string Rut { get; set; }
 
+        [StringLength(100, MinimumLength = 3)]
+        public required string Name { get; set; }
+
         [EmailAddress]
         public required string Email { get; set; }
 
