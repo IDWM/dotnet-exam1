@@ -8,6 +8,9 @@ namespace dotnet_exam1.Src.DTOs
         [Rut]
         public required string Rut { get; set; }
 
+        [StringLength(100, MinimumLength = 3)]
+        public required string Name { get; set; }
+
         [EmailAddress]
         public required string Email { get; set; }
         public required string Gender { get; set; }
