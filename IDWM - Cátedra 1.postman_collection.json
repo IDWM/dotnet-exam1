@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "9d057a44-4cd3-42c1-a866-5c85cac33eb3",
+		"name": "IDWM - Cátedra 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25678350"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/user?sort=asc&gender=femenino",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "asc"
+						},
+						{
+							"key": "gender",
+							"value": "femenino"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rut\": \"20.416.699-4\",\r\n    \"name\": \"Jorge Rivera\",\r\n    \"email\": \"jorge.rivera01@ce.ucn.cl\",\r\n    \"birthdate\": \"2000-10-25\",\r\n    \"gender\": \"masculino\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rut\": \"15.987.654-3\",\r\n    \"name\": \"Jorge Rivera\",\r\n    \"email\": \"jorge.rivera01@ce.ucn.cl\",\r\n    \"birthdate\": \"2000-10-25\",\r\n    \"gender\": \"masculino\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/11",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/user/11",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://localhost:5000/api",
+			"type": "string"
+		}
+	]
+}
