@@ -1,0 +1,72 @@
+[
+    {
+        "rut": "12.345.678-5",
+        "name": "Jorge Pérez",
+        "email": "jorge.perez@example.com",
+        "gender": "masculino",
+        "birthdate": "1990-05-15"
+    },
+    {
+        "rut": "13.876.543-9",
+        "name": "María Rodríguez",
+        "email": "maria.rodriguez@example.com",
+        "gender": "femenino",
+        "birthdate": "1988-09-23"
+    },
+    {
+        "rut": "14.765.432-8",
+        "name": "Carlos González",
+        "email": "carlos.gonzalez@example.com",
+        "gender": "masculino",
+        "birthdate": "1985-11-30"
+    },
+    {
+        "rut": "15.987.654-3",
+        "name": "Ana Fernández",
+        "email": "ana.fernandez@example.com",
+        "gender": "femenino",
+        "birthdate": "1992-03-12"
+    },
+    {
+        "rut": "16.234.567-0",
+        "name": "Pedro Ramírez",
+        "email": "pedro.ramirez@example.com",
+        "gender": "masculino",
+        "birthdate": "1987-07-08"
+    },
+    {
+        "rut": "17.345.678-1",
+        "name": "Isabel Martínez",
+        "email": "isabel.martinez@example.com",
+        "gender": "femenino",
+        "birthdate": "1995-01-18"
+    },
+    {
+        "rut": "18.456.789-2",
+        "name": "Javier Salinas",
+        "email": "javier.salinas@example.com",
+        "gender": "masculino",
+        "birthdate": "1990-12-22"
+    },
+    {
+        "rut": "19.567.890-3",
+        "name": "Lucía Cáceres",
+        "email": "lucia.caceres@example.com",
+        "gender": "femenino",
+        "birthdate": "1984-10-05"
+    },
+    {
+        "rut": "20.678.901-4",
+        "name": "Alejandro Araya",
+        "email": "alejandro.araya@example.com",
+        "gender": "masculino",
+        "birthdate": "1989-04-17"
+    },
+    {
+        "rut": "21.789.012-5",
+        "name": "Sofía Rivas",
+        "email": "sofia.rivas@example.com",
+        "gender": "femenino",
+        "birthdate": "1994-02-11"
+    }
+]

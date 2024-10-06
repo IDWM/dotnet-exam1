@@ -1,0 +1,18 @@
+[
+    {
+        "name": "femenino",
+        "users": []
+    },
+    {
+        "name": "masculino",
+        "users": []
+    },
+    {
+        "name": "otro",
+        "users": []
+    },
+    {
+        "name": "prefiero no decirlo",
+        "users": []
+    }
+]
